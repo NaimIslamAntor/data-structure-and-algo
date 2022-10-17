@@ -8,13 +8,14 @@
 
     const alphaArr = alphabets.split('')
 
-     for(char of sentence){
+     for(let char of sentence){
 
         const indexOfChar = alphaArr.indexOf(char)
        
         if (indexOfChar !== -1) {
             alphaArr.splice(indexOfChar, 1)
         }
+
      }
 
      return !alphaArr.length
